@@ -92,9 +92,14 @@
 
  .main-text {
     color: var(--clr-neutral-white);
-
  }
 
+ .note {
+  color: var(--clr-primary-accent);
+  font-size: clamp(1rem,2rem,2.5rem);
+  font-weight: var(--fw-bold);
+  margin: auto;
+ }
  .bg-circle {
     color: var(--clr-neutral-light);
     background-color: var(--clr-neutral-dark);
@@ -108,17 +113,20 @@
     cursor: pointer;
     margin-top: var(--content-margin-top);
   }
+
+
  /* Card  */
  
   .card {
     background-color: var(--clr-neutral-dark);
     background-image: linear-gradient(hsla(216, 12%, 8%,0.2),hsla(216, 12%, 8%,0.6));
     width: min(90%,380px);
+    min-height: 400px;
     display: grid;
     gap: 1rem;
     border-radius: 12px;
     overflow: hidden;
-    padding: 1.3em;
+    padding: 1.3em 1.3em 1.8em;
   }
 
   .card p {
@@ -128,7 +136,7 @@
   /* First Card  */
 
   .first-card {
-    --content-padding : 0.8em 1.15em;
+    --content-padding : 0.5em 1.25em;
     --content-margin-top : 1rem;
   }
 
